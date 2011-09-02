@@ -14,9 +14,9 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "quiescent"
   gem.homepage = "http://github.com/willb/quiescent"
-  gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.license = "Apache v2"
+  gem.summary = %Q{Simple library for write-once ("quiescing") constants}
+  gem.description = %Q{This is a very simple mixin to support quiescing constants (which we call "quiescents") in Ruby.  You may assign a value to a quiescing constant once during the execution of the program; however, a quiescing constant's value is fixed after the first time it is read.  Quiescing constants may have default values (specified either as explicit values or argumentless blocks to compute that value) that take effect if they are not explicitly assigned to before their first use.}
   gem.email = "willb@redhat.com"
   gem.authors = ["Will Benton"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
