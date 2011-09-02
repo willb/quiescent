@@ -3,7 +3,7 @@ quiescent
 
 This is a very simple mixin to support quiescing constants, which we call "quiescents" in Ruby.  You may assign a value to a quiescing constant once during the execution of the program; however, a quiescing constant's value is fixed after the first time it is read.  Quiescing constants may have default values (specified either as explicit values or argumentless blocks to compute that value) that take effect if they are not explicitly assigned to before their first use.
 
-If you like the convenience of constants but might need to defer giving them values, you'll like quiescents.  If you like single-assignment variables in languages like Prolog, you'll like quiescents.  If you [suspect that write-once data is far more common than most people admit](http://www.springerlink.com/content/q530q33677843u74/), you'll like quiescents.
+If you like the convenience of constants but might need to defer giving them values, you'll like quiescents.  If you like single-assignment variables in languages like Prolog, you'll like quiescents.  If you [suspect that write-once values are far more common than most people admit](http://web.willbenton.com/research/vmcai-2011), you'll like quiescents.
 
 Here's a simple example:
 
